@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^download/([^/]*?)/page/([^/]*?)/$ search.php?q=$1&token=$2
+RewriteRule ^download/([^/]*?)/$ search.php?q=$1
+RewriteRule ^watch$ view.php [QSA,L]
+RewriteRule ^page/about/$ about.php 
